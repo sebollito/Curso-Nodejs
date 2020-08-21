@@ -1,0 +1,18 @@
+doctype html
+html(lang="es")
+    head
+        title FotoFacilito
+        meta(charset="utf-8")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css")
+        link(rel="stylesheet", href="/public/css/app.css")
+        script(src="/socket.io/socket.io.js")
+    body
+        nav(class="large-padding black white-text")
+            ul
+                li 
+                    a(href="/app") Inicio
+                li 
+                    a(href="/app/imagenes/new") Subir imagen
+                li 
+                    a(href="/app/imagenes") Mis imágenes
+        block contenido
